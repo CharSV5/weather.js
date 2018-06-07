@@ -1,0 +1,23 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharSV5/weather.js.git"
+  },
+  "author": "Charlene Bastians",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharSV5/weather.js/issues"
+  },
+  "homepage": "https://github.com/CharSV5/weather.js#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "save": "^2.3.2"
+  }
+}
