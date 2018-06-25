@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <meta charset="utf-8">
   <title>Weather App</title>
 </head>
 <body>
-  <div class="container">
+  <div id="weather">
      <fieldset>
        <form action="/" method="post">
          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
@@ -19,6 +20,19 @@
          <p><%= error %></p>
        <% } %>
      </fieldset>
-</div>
+     </div>
+
+     <div id="fabrizio"></div>
+     <div class="container">
+     	<div class="sunny"></div>
+     	<div class="cloudy"></div>
+     	<div class="rainy"></div>
+     	<div class="snowy"></div>
+     	<div class="rainbow"></div>
+     	<div class="starry"></div>
+     	<div class="stormy"></div>
+     </div>
+
+
   </body>
   </html>
