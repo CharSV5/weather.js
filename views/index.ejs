@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Weather App</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+     <fieldset>
+       <form action="/" method="post">
+         <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+         <input type="submit" class="ghost-button" value="Get Weather">
+       </form>
+       <% if (weather !== null) { %>
+         <p><%= weather %></p>
+       <% } %>
 
-    <form action="/" method="post">
-      <input name="city" type="text" placeholder="Enter a City" required>
-      <input type="submit" value="Get Weather">
-    </form>
-
+       <% if(error !== null){ %>
+         <p><%= error %></p>
+       <% } %>
+     </fieldset>
+</div>
   </body>
-</html>
+  </html>
